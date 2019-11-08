@@ -1,0 +1,28 @@
+package com.java1234;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("输入:");
+        Scanner scanner = new Scanner(System.in);
+        double num1 = scanner.nextDouble();
+        System.out.println("输入算法:  1:+ 2:- 3:* 4:/ 5：root 6:pow");
+        int num = scanner.nextInt();
+        System.out.println("输入：");
+        double num2 = scanner.nextDouble();
+        if (num == 1) {
+            System.out.println(num1 + num2);
+        } else if (num == 2) {
+            System.out.println(num1 - num2);
+        } else if (num == 3) {
+            System.out.println(num1 * num2);
+        } else if (num == 4) {
+            System.out.println(num1 / num2);
+        } else if (num == 5) {
+            System.out.println(Math.pow(num1,1.0/num2));
+        } else if (num == 6) {
+            System.out.println(Math.pow(num1, num2));
+        }
+    }
+}
